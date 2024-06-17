@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('background.jpg'); /* Add your background image here */
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px; /* Increased size */
+  margin: 0 auto;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Slightly transparent background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Search and Filter Box */
+.search-filter-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Input Styles */
+input[type='text'] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  margin-left: 10px;
+}
+
+.dropdown button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 250px; /* Increased width */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.dropdown-content label {
+  display: block;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.dropdown-content label:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-content input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+.dropdown-content .filled {
+  color: #ffd700;
+}
+
+.dropdown-content span {
+  font-size: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Movie List Styles */
+.movie-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.movie-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.movie-item:last-child {
+  border-bottom: none;
+}
+
+.movie-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.movie-item h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.movie-category {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  margin-left: auto;
+}
+
+/* Star Rating Styles */
+.star-rating {
+  display: flex;
+  align-items: center;
+  margin-top: 5px; /* Adjust margin to position stars at the bottom */
+}
+
+.star-rating span {
+  font-size: 24px; /* Increased size */
+  color: #ffd700;
+  margin-right: 2px;
+}
+
+.star-rating .filled {
+  color: #ffd700;
+}
+
+.star-rating span:not(.filled) {
+  color: #ccc;
+}
